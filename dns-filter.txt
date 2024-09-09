@@ -1,6 +1,7 @@
 !
 ! Title: DNS Rebinding Protection
 ! Description: Block DNS responses containing local or private IP addresses which should not normally be received from public DNS servers.
+! License: Copyright (C) 2024 Wardz | GNU General Public License v3.0.
 !
 ! Note: This is the adguard-dns version of the filter. See /adblock-filter.txt for a browser based version.
 !
