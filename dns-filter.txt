@@ -69,7 +69,6 @@
 /^5f00:[0-9a-f:]+$/
 !
 ! ——— 64:ff9b:1::/48 (Local IPv4-IPv6 Translations Prefix)
-! TODO: Private translated addresses in 64:ff9b::/96 ???
 /^64:ff9b:1:[0-9a-f:]+$/
 !
 ! ——— ::ffff:0:0/96 (Local IPv4-mapped Addresses)
