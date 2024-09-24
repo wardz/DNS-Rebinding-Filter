@@ -7,10 +7,6 @@
 !
 ! Note: This is the browser/ublock version of the filter. See /dns-filter.txt for the adguard-dns version.
 !
-!#if cap_ipaddress
-*$3p,strict3p,ipaddress=lan,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-!#else
-!
 ! ——— LAN
 ! https://en.wikipedia.org/wiki/Private_network
 !
@@ -38,7 +34,6 @@
 !
 ! ——— any local
 ! https://en.wikipedia.org/wiki/0.0.0.0
-!#endif
 !
 /^\w+:\/\/0\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||0.0.0.0^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
