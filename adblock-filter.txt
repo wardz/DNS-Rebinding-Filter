@@ -3,9 +3,9 @@
 ! Last modified: %timestamp%
 ! Expires: 29 days
 ! Description: Fork of uBlock's lan-block filter. Prevents public internet sites from digging into your local LAN files.
-! Main Source: https://github.com/uBlockOrigin/uAssets/blob/master/filters/lan-block.txt
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 !
+! Note: This is the browser/ublock version of the filter. See /dns-filter.txt for the adguard-dns version.
 !
 !#if cap_ipaddress
 *$3p,strict3p,ipaddress=lan,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -50,10 +50,10 @@
 /^\w+:\/\/100\.(?:6[4-9]|[7-9][0-9]|1[0-1][0-9]|12[0-7])(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){2}[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+:\/\/192\.0\.[02]\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+:\/\/198\.1[8-9](?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){2}[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/\[5f00:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/\[64:ff9b:1:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+:\/\/224\.0\.0\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+:\/\/(?:239|24[0-9]|25[0-5])(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){3}[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+/^\w+:\/\/\[5f00:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+/^\w+:\/\/\[64:ff9b:1:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+:\/\/\[ff0[0-9f]:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! Reserved for documentation & example source code
@@ -75,8 +75,8 @@
 !
 /^\w+:\/\/\[2001(?::2)?:0:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
-! ——— block all multicast ranges [DEFAULT-DISABLED]
-! Blocks all multicast addresses instead of only 224.0.0.0/24 & 239.0.0.0/8
+! ——— multicast addresses [DEFAULT-DISABLED]
+! This blocks all multicast addresses instead of only 224.0.0.0/24 & 239.0.0.0/8.
 !
 !/^\w+:\/\/(?:22[4-9]|23[0-9])(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){3}[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !/^\w+:\/\/\[ff[03][0-9a-f]:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
