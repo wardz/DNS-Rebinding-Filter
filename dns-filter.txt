@@ -63,9 +63,6 @@
 ! ——— fc00::/7 (Unique-Local) and fe80::/10 (Link-Local)
 /^f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+$/
 !
-! ——— ff00::/8 (Local Multicast Prefix)
-/^ff0[0-9f]:[0-9a-f:]+$/
-!
 ! ——— 3fff::/20 (Documentation Prefix)
 /^3fff:[0-9a-f:]+$/
 !
@@ -82,13 +79,13 @@
 /^::ffff:[0-9a-f:\.]+$/
 !
 ! ——— ff00::/8 (Multicast)
-/^ff[03][0-9a-f]:[0-9a-f:]+$/
+/^ff[0-9f][0-9f]:[0-9a-f:]+$/
 !
 ! ——— Block Obsolete 6to4 Addressing Scheme
 /^192\.88\.99\.(?:[0-9]{1,3})$/
 /^2002:[0-9a-f:]+$/
 !
 ! ——— Block Obsolete Teredo Addressing Scheme
-/^2001:0000(:[0-9a-f]{1,4}){0,7}::?$/
+/^2001:0000:[0-9a-f:]+$/
 !
 ! ——— END
