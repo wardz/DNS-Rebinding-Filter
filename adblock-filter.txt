@@ -68,7 +68,7 @@
 ! https://en.wikipedia.org/wiki/Teredo_tunneling#Security_considerations
 ! Windows 10 v1803 and later disable Teredo by default.
 !
-/^\w+:\/\/\[2001:0000:[0-9a-f:]{1,}\]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+/^\w+:\/\/\[2001:0:[0-9a-f:]{1,}\]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! ——— multicast addresses [DEFAULT-DISABLED]
 ! This blocks all multicast addresses instead of only 224.0.0.0/24 & 239.0.0.0/8.
