@@ -79,8 +79,8 @@
 ! ——— 3fff::/20 (Documentation Prefix)
 /^3fff:[0-9a-f:]+$/
 !
-! ——— 2001:10::/28 (ORCHID) and 2001:db8::/32 (Documentation Prefix)
-/^2001:(?:10|db8):[0-9a-f:]+$/
+! ——— 2001:db8::/32 (Documentation Prefix)
+/^2001:db8:[0-9a-f:]+$/
 !
 ! ——— 64:ff9b:1::/48 (Local IPv4-IPv6 Translations Prefix)
 /^64:ff9b:1:[0-9a-f:]+$/
