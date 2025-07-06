@@ -5,6 +5,11 @@
 !
 ! Note: This is the adguard-dns version of the filter. See /adblock-filter.txt for a browser based version.
 !
+! ——— Whitelist
+!
+@@||3gppnetwork.org^
+@@||telenor.net^
+!
 ! ——— Local Domains
 !
 ||local^

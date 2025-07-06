@@ -91,6 +91,8 @@
 !
 ! ——— known local service and router configuration domains
 !
+||telenor.net^
+||3gppnetwork.org^
 ||airbox.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||airport^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||arcor.easybox^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
