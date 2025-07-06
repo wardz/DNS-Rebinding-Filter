@@ -71,7 +71,7 @@
 /^::1?$/
 !
 ! ——— fc00::/7 (Unique-Local) and fe80::/10 (Link-Local)
-/^f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+$/
+/^f(?:[cd][0-9a-f]|e[89ab])[0-9a-f]:[0-9a-f:]+$/
 !
 ! ——— 3fff::/20 (Documentation Prefix)
 /^3fff:[0-9a-f:]+$/

@@ -14,16 +14,13 @@
 /^\w+:\/\/172\.(?:1[6-9]|2\d|3[01])(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){2}[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+:\/\/192\.168(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){2}[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ! Includes link-local
-/^\w+:\/\/\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+/^\w+:\/\/\[f(?:c[0-9a-f]|d[0-9a-f]|e[89ab])[0-9a-f]:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! Ipv4 link-local addresses for network autoconfiguration https://github.com/gwarser/filter-lists/issues/5
 /^\w+:\/\/169\.254\.(?:[1-9]\d?|1\d{2}|2(?:[0-4]\d|5[0-4]))\.(?:[1-9]?\d|1\d{2}|2(?:[0-4]\d|5[0-5]))[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! Ipv6 from ipv4 transition addresses https://github.com/gwarser/filter-lists/issues/6
-! TODO: cleanup these
-/^\w+:\/\/\[(?:::ffff:|64:ff9b::)(?:7f[0-9a-f]{2}|a[0-9a-f]{2}|ac1[0-9a-f]|c0a8|a9fe|(f|e)[0-9a-f]{3,4}|ef[0-9a-f]{2}|64[4-7][0-9a-f]|c612|c613):[0-9a-f]{1,4}\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/\[(?:::ffff:|64:ff9b::)(?:c000:2?|c058:63|c633:64|cb00:71)[0-9a-f]{2}\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/\[(?:::ffff:|64:ff9b::)[0-9a-f]{1,2}:[0-9a-f]{1,4}\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+/^\w+:\/\/\[(?:::ffff:|64:ff9b::)(?:7f[0-9a-f]{2}|a[0-9a-f]{2}|ac1[0-9a-f]|c0a8|a9fe|ef[0-9a-f]{2}|64[4-7][0-9a-f]|c612|c613|c000:2?|c058:63|cb00:71)[0-9a-f]{0,4}:[0-9a-f]{1,4}\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! ——— localhost
 ! https://en.wikipedia.org/wiki/Localhost
@@ -73,7 +70,7 @@
 ! This blocks all multicast addresses instead of only 224.0.0.0/24 & 239.0.0.0/8.
 !
 !/^\w+:\/\/(?:22[4-9]|23[0-9])(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){3}[:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-!/^\w+:\/\/\[ff[03][0-9a-f]:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+!/^\w+:\/\/\[ff[0-9a-f][0-9a-f]:[0-9a-f:]+\][:\/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! ——— .internal TLD
 ! https://en.wikipedia.org/wiki/.internal
