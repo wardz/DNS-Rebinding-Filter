@@ -74,16 +74,13 @@
 /^f(?:[cd][0-9a-f]|e[89ab])[0-9a-f]:[0-9a-f:]+$/
 !
 ! ::ffff:0:0/96 (Private IPv4-mapped IPv6 Addresses) and 64:ff9b::/96 (Private NAT64 Addresses)
-/^(?:::ffff:|64:ff9b::)(?:7f[0-9a-f]{2}|a[0-9a-f]{2}|ac1[0-9a-f]|c0a8|a9fe|ef[0-9a-f]{2}|64[4-7][0-9a-f]|c612|c613|c000:2?|c058:63|cb00:71)[0-9a-f]{0,4}:[0-9a-f]{1,4}$/
+/^(?:::ffff:|64:ff9b::|64:ff9b:1::)(?:7f[0-9a-f]{2}|a[0-9a-f]{2}|ac1[0-9a-f]|c0a8|a9fe|ef[0-9a-f]{2}|64[4-7][0-9a-f]|c612|c613|c000:2?|c058:63|cb00:71)[0-9a-f]{0,4}:[0-9a-f]{1,4}$/
 !
 ! ——— 3fff::/20 (Documentation Prefix)
 /^3fff:[0-9a-f:]+$/
 !
 ! ——— 2001:db8::/32 (Documentation Prefix)
 /^2001:db8:[0-9a-f:]+$/
-!
-! ——— 64:ff9b:1::/48 (Local IPv4-IPv6 Translations Prefix)
-/^64:ff9b:1:[0-9a-f:]+$/
 !
 ! ——— ff00::/8 (Multicast)
 /^ff[0-9a-f][0-9a-f]:[0-9a-f:]+$/
