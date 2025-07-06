@@ -14,7 +14,10 @@
 !
 ||local^
 ||localhost^
-||arpa^
+||home.arpa^
+||site.arpa^
+||example.arpa^
+||test.arpa^
 ||internal^
 ||example^
 ||test^
