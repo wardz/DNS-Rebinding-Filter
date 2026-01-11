@@ -1,3 +1,3 @@
-# DNS-Rebind-Protection
+# AdGuard-DNS-Rebind-Protection
 
-Personal local network blocklist for adguard-dns and ublock.
+Personal local network blocklist for adguard-dns.
