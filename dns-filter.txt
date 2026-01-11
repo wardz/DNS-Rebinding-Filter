@@ -48,7 +48,7 @@
 ! ——— fc00::/7 (Unique-Local) and fe80::/10 (Link-Local)
 /^f(?:[cd][0-9a-f]|e[89ab])[0-9a-f]:[0-9a-f:]+$/
 !
-! ::ffff:0:0/96 (Private IPv4-mapped IPv6 Addresses) and 64:ff9b::/96 (Private NAT64 Addresses)
-/^(?:::ffff:|64:ff9b::)(?:7f[0-9a-f]{2}|a[0-9a-f]{2}|ac1[0-9a-f]|c0a8|a9fe|[0-9a-f]{1,2}):[0-9a-f]{1,4}$/
+! ——— Private IPv4-mapped Addresses
+/^(?:::ffff:|64:ff9b::)(?:ac1[0-9a-f]|c0a8|a9fe|7f[0-9a-f]{2}|a[0-9a-f]{2}|[0-9a-f]{1,2}):[0-9a-f]{1,4}$/
 !
 ! ——— END
