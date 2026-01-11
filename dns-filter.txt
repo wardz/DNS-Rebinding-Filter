@@ -1,26 +1,30 @@
 !
-! Title: DNS Rebinding Protection
+! Title: Wardz's DNS Rebinding Protection
 ! Description: Block DNS responses containing local or private IP addresses which should not normally be received from public DNS servers.
-! License: Copyright (C) 2025 Wardz | GNU General Public License v3.0.
-!
-! Note: This is the adguard-dns version of the filter. See /adblock-filter.txt for a browser based version.
-!
-! ——— Whitelist
-!
-@@||3gppnetwork.org^
-@@||telenor.net^
+! License: Copyright (C) 2026 Wardz | GNU General Public License v3.0.
+! Syntax: AdGuard (Regex)
 !
 ! ——— Local Domains
 !
+||home.arpa^
+||internal.arpa^
+||internal^
+||intranet^
+||corp^
+||lan^
+||test^
+||example^
 ||local^
 ||localhost^
-||home.arpa^
-||site.arpa^
-||example.arpa^
-||test.arpa^
-||internal^
-||example^
-||test^
+||localhost6^
+||localdomain^
+||localdomain6^
+||ip6-localhost^
+||ip6-loopback^
+||ip6-localnet^
+||ip6-mcastprefix^
+||ip6-allnodes^
+||ip6-allrouters^
 !
 ! ——— IPv4 Addresses
 ! Regexes are non-strict (loosely matches).
