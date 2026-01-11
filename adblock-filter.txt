@@ -83,9 +83,7 @@
 !
 ! ——— .arpa TLD
 ||home.arpa^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||site.arpa^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||test.arpa^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||example.arpa^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||internal.arpa^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! ——— .test and .example TLD
 ||test^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -93,25 +91,25 @@
 !
 ! ——— known local service and router configuration domains
 !
-||telenor.net^
-||3gppnetwork.org^
 ||airbox.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||airport^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||arcor.easybox^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||aterm.me^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||belkin.range^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||bthub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||bthomehub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||cloudmesh.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||congstar.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||connect.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||console.gl-inet.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||dishy.starlink.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||easy.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||etxr^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||extender.belkin.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fire.walla^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.nas^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.repeater^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||fritzbox.internal^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||giga.cube^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||hi.link^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||hitronhub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -124,11 +122,15 @@
 ||myfritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||mygateway^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||mobile.hotspot^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||mwlogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||ntt.setup^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||orbilogin.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||orbilogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||pi.hole^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||plex.direct^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local|~app.plex.tv
 ||repeater.asus.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||router.asus.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||router.synology.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||routerlogin.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||routerlogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||samsung.router^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -141,8 +143,11 @@
 ||tplinkplclogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||tplinkrepeater.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||tplinkwifi.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||unifi^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||unifi.localdomain^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||web.setup^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||web.setup.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||www.wyzerouter.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! ——— EXCEPTIONS
 !
@@ -155,8 +160,8 @@
 ! https://github.com/uBlockOrigin/uAssets/pull/20768
 @@||127.0.0.1^$3p,domain=musicbrainz.org
 !
-! https://github.com/uBlockOrigin/uAssets/pull/22475
-@@||127.0.0.1^$domain=client.foldingathome.org
+! https://www.reddit.com/r/uBlockOrigin/comments/1mmfys8/the_lanblock_list_blocks_the_new_foldinghome/
+@@||127.0.0.1^$domain=foldingathome.org
 !
 ! https://github.com/uBlockOrigin/uAssets/issues/21960
 @@||127.0.0.1^$domain=mega.nz
@@ -165,10 +170,36 @@
 @@||127.0.0.1^$domain=intel.cn|intel.co.id|intel.co.jp|intel.co.kr|intel.com|intel.com.br|intel.com.tw|intel.de|intel.fr|intel.la|intel.vn
 !
 ! https://github.com/uBlockOrigin/uAssets/issues/23388
-@@||localhost^$from=deutsche-rentenversicherung.de
-@@||127.0.0.1^$from=bund.de|organspende-register.de|bayernportal.de|mv-serviceportal.de
+@@||localhost^$from=deutsche-rentenversicherung.de|bundesarchiv.de
+@@||127.0.0.1^$from=bund.de|organspende-register.de|bayernportal.de|mv-serviceportal.de|governikus.de|deutsche-rentenversicherung.de
 !
 ! https://github.com/uBlockOrigin/uAssets/pull/24488
 @@||localhost^$websocket,domain=www.faceit.com
 !
+! Clicknload https://community.brave.app/t/filecrypt-co-functionality-is-broken-when-shields-are-up/597698/
+@@||127.0.0.1^$domain=filecrypt.co
+!
+! Unable to scan for hardware due to localhost https://pcsupport.lenovo.com/ https://github.com/brave/brave-browser/issues/43050
+@@||127.0.0.1^$domain=pcsupport.lenovo.com
+!
+! https://studio.apollographql.com/sandbox/explorer (fixed in https://github.com/brave/adblock-lists/pull/2320)
+@@||localhost^$domain=apollographql.com
+!
+! https://driverhub.asus.com/en (fixed in https://github.com/brave/adblock-lists/pull/2340)
+@@||127.0.0.1^$domain=driverhub.asus.com
+!
+! https://www.reddit.com/r/uBlockOrigin/comments/1lb0bwo/ubol_ruleset_migration/
+@@||127.0.0.1^$domain=bancobrasil.com.br
+@@||127.0.0.1^$domain=bb.com.br
+@@||127.0.0.1^$domain=bradesco.com.br
+@@||127.0.0.1^$domain=dell.com
+!
+! Required to sign into Mozilla VPN app (goes through browser)
+@@||127.0.0.1^$domain=vpn.mozilla.org
+!
+! https://github.com/uBlockOrigin/uAssets/pull/30430
+@@/^ws:\/\/(127\.0\.0\.1|localhost):\d{4,5}\/icslite\/websocket\//$websocket,domain=support.huawei.com
+!
+! https://github.com/uBlockOrigin/uAssets/issues/30660
+@@||login.microsoftonline.com/*/oauth2/$xhr,domain=azure.com|m365.cloud.microsoft|make.powerautomate.com|microsoft.com|outlook.office.com
 ! ——— END
